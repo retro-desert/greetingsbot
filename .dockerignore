@@ -1,0 +1,7 @@
+Dockerfile
+compose.yml
+README.md
+venv/
+**/.git
+**/.gitignore
+**/.env

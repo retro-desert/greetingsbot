@@ -1,0 +1,8 @@
+aiogram==2.25.1
+celery==5.2.7
+peewee==3.17.1
+peewee-migrate==1.12.2
+psycopg2-binary==2.9.7
+python-dateutil==2.8.2
+python-decouple==3.8
+redis==4.5.5
