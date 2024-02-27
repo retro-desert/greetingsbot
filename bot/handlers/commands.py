@@ -8,19 +8,25 @@ from loader import bot
 
 
 # Обработка команды /start, начало
-async def start(message: Message, state: FSMContext) -> None:
+async def start(message: Message or int, state: FSMContext) -> None:
 	# Завершаем все состояния
 	await state.finish()
 	# Текст сообщения
-	text = """
-Привет! Этот бот создал фонд Соломон! Здесь мы заботимся о том, чтобы ни одна важная дата в вашей жизни не забылась.
-У нас готовы поздравления, которые можно отправить вашим друзьям, коллегам или тем, кого вы любите. Выбирайте и делитесь!
+	text1 = """
+Привет! Этот бот создал фонд Соломон! Здесь мы заботимся о том, чтобы ни одна важная дата в вашей жизни не забылась.\n
+У нас готовы поздравления, которые можно отправить вашим друзьям, коллегам или тем, кого вы любите. Выбирайте и делитесь!\n
 А если у вас есть своя особенная дата, которая заслуживает внимания, добавьте ее сюда, и за два дня мы напомним вам о ней.
 """
+	text2 = """МЕНЮ"""
 	# Отвечаем пользователю
-	await message.reply(text,
+
+	await bot.send_message(message.from_user.id if type(message) == Message else message,
+						   text1,
 						parse_mode=ParseMode.HTML,
-						reply_markup=markup_menu())
+						reply_markup=ReplyKeyboardRemove())
+	await bot.send_message(message.from_user.id if type(message) == Message else message,
+						   text2,
+						   reply_markup=markup_menu())
 
 
 # Обработка команды /help
@@ -31,7 +37,7 @@ async def help(message: Message, state: FSMContext) -> None:
 	text = """Список команд
 /start - Приветственное сообщение, перезапуск
 /help - Это сообщение
-/cancel - Отмена действия, выход
+/cancel - Отмена действия, выход в меню
 /show_events - Показать все праздники
 /add_event - Добавить праздник
 /del_event - Удалить праздник"""
@@ -45,7 +51,8 @@ async def cancel(message: Message, state: FSMContext) -> None:
 	# Завершаем все состояния
 	await state.finish()
 	# Отвечаем пользователю
-	await message.reply("[+] Сброшено", reply_markup=ReplyKeyboardRemove())
+	await message.reply("[+] Сброшено")
+	await start(message, state)
 
 
 # Обработка команды /show_events
@@ -76,7 +83,7 @@ async def del_event_begin(message: Message, state: FSMContext) -> None:
 		# Обновление информации в состоянии
 		await state.update_data(del_event={str(i): events[i]["id"] for i in range(len(events))})
 		# Отвечаем пользователю
-		await message.reply(f"[*] 1/1 (Удаление) Выберите праздник из списка:\n{result_list}",
+		await message.reply(f"(Удаление) Выберите праздник из списка:\n{result_list}",
 							reply_markup=markup_cancel())
 	# Иначе
 	else:
@@ -93,7 +100,7 @@ async def del_event_begin(message: Message, state: FSMContext) -> None:
 async def add_event_name(message: Message) -> None:
 	# Установка состояния
 	await Form.input_event_name.set()
-	await bot.send_message(message.from_user.id, "[*] 1/2 (Добавление) Отправьте название праздника",
+	await bot.send_message(message.from_user.id, "(Добавление) Отправьте название праздника",
 						   reply_markup=markup_cancel())
 
 

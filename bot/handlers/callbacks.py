@@ -1,6 +1,8 @@
 from aiogram import Dispatcher
 from aiogram.dispatcher import FSMContext
 from aiogram.types import CallbackQuery
+
+from bot.handlers.commands import start
 from bot.markup import markup_choose_event, markup_cancel, markup_donate, markup_choose_person, markup_choose_greeting
 from bot.services import get_event, get_title, get_photo, get_default_event
 from bot.states import Form
@@ -24,7 +26,7 @@ async def choose_event_callback(call: CallbackQuery, state: FSMContext) -> None:
 			# Установка состояния
 			await Form.input_event_name.set()
 			# Отправка сообщения
-			await bot.send_message(call.message.chat.id, "[*] 1/2 (Добавление) Отправьте название праздника",
+			await bot.send_message(call.message.chat.id, "(Добавление) Отправьте название праздника",
 								   reply_markup=markup_cancel())
 
 
@@ -49,7 +51,8 @@ async def choose_person_callback(call: CallbackQuery, state: FSMContext) -> None
 				# Отправляем фото с описанием
 				await bot.send_photo(call.message.chat.id, get_photo(event.photo).photo_id,
 									 caption=event.text,
-									 reply_markup=markup_donate())
+									 reply_markup=markup_donate(text=event.button_text, link=event.button_link))
+				await start(call.message.chat.id, state)
 			# Иначе
 			else:
 				# Формируем словарь с данными

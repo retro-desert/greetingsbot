@@ -12,7 +12,7 @@ def markup_cancel() -> ReplyKeyboardMarkup:
 
 # Разметка основного меню
 def markup_menu() -> InlineKeyboardMarkup:
-	markup = InlineKeyboardMarkup(row_width=2)
+	markup = InlineKeyboardMarkup(row_width=1)
 	# Добавить две кнопки на сообщении
 	item1 = InlineKeyboardButton("Выбрать праздник", callback_data="choose_event")
 	item2 = InlineKeyboardButton("Внести свою дату", callback_data="input_event")
@@ -44,14 +44,14 @@ def markup_choose_person() -> InlineKeyboardMarkup:
 def markup_choose_greeting() -> ReplyKeyboardMarkup:
 	# Добавление одной кнопки на сообщении
 	markup = ReplyKeyboardMarkup(resize_keyboard=True, selective=True)
-	markup.add(">>")
+	markup.add("Еще поздравление", "/cancel")
 	return markup
 
 
 # Разметка кнопки поддержать
-def markup_donate() -> InlineKeyboardMarkup:
+def markup_donate(link: str = "https://www.google.com/", text: str = "Поддержать") -> InlineKeyboardMarkup:
 	# Добавление кнопки с ссылкой "Поддержать" на сообщении
 	markup = InlineKeyboardMarkup(resize_keyboard=True, selective=True)
-	item1 = InlineKeyboardButton(text="Поддержать", url="https://www.google.com/")
+	item1 = InlineKeyboardButton(text=text, url=link)
 	markup.add(item1)
 	return markup

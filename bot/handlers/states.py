@@ -2,6 +2,8 @@ from aiogram import Dispatcher
 from aiogram.dispatcher import FSMContext
 from aiogram.types import Message, ReplyKeyboardRemove
 from dateutil import parser
+
+from bot.handlers.commands import start
 from bot.markup import markup_choose_greeting, markup_donate
 from bot.markup import markup_cancel
 from bot.services import create_event, get_default_event, get_photo, get_event_or_none
@@ -18,7 +20,7 @@ async def add_event_date(message: Message, state: FSMContext) -> None:
 	await state.update_data(input_event_name=event_data)
 	# Обновление состояния
 	await Form.input_event_date.set()
-	await bot.send_message(message.from_user.id, "[*] 2/2 (Добавление) Отправьте дату праздника в формате гггг мм дд",
+	await bot.send_message(message.from_user.id, "(Добавление) Отправьте дату праздника в формате гггг мм дд",
 						   reply_markup=markup_cancel())
 
 
@@ -50,8 +52,8 @@ async def add_event_final(message: Message, state: FSMContext) -> None:
 
 # Обработка сообщения при состоянии choose_greeting
 async def choose_greeting(message: Message, state: FSMContext) -> None:
-	# Если сообщение ">>"
-	if message.text == ">>":
+	# Если сообщение "Еще поздравление"
+	if message.text == "Еще поздравление":
 		# Достаем данные из состояния
 		async with state.proxy() as data:
 			event_data = data["choose_event"]
@@ -76,13 +78,11 @@ async def choose_greeting(message: Message, state: FSMContext) -> None:
 			await state.finish()
 			# Сообщение
 			text1 = """
-Мы подготовили для вас открытку от фонда Соломон в честь праздника!
-Отправьте её своим любимым! Открытка по ссылке - ..."""
-			text2 = """
 А ещё, вы всегда сможете отправить поздравление с праздником для семей фонда Соломон! А в знак благодарности мы с удовольствием отправим вам письмо радости от подопечного или видео привет!
 Нажмите на кнопку - чтобы поддержать семью"""
-			await bot.send_message(message.chat.id, text1, reply_markup=ReplyKeyboardRemove())
-			await bot.send_message(message.chat.id, text2, reply_markup=markup_donate())
+			# await bot.send_message(message.chat.id, text2, reply_markup=ReplyKeyboardRemove())
+			await bot.send_message(message.chat.id, text1, reply_markup=markup_donate(link="https://clck.ru/394XDH/"))
+			await start(message, state)
 
 
 # Обработка сообщения при состоянии del_event

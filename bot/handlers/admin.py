@@ -49,7 +49,7 @@ async def popular_greeting(message: Message) -> None:
 async def create_message(message: Message) -> None:
 	# Установить состояние
 	await Form.create_message.set()
-	await message.reply(f"[*] 1/1 Напишите сообщение, которое вы хотите разослать всем пользователям",
+	await message.reply(f"Напишите сообщение, которое вы хотите разослать всем пользователям",
 						reply_markup=markup_cancel())
 
 

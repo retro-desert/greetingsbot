@@ -4,10 +4,10 @@ x-bot: &bot
   TOKEN: ${TOKEN}
   ADMINS: ${ADMINS}
   DATABASE: ${DATABASE}
-  USER: ${DBUSER}
-  PASSWORD: ${DBPASSWORD}
-  HOST: ${DBHOST}
-  PORT: ${DBPORT}
+  DBUSER: ${DBUSER}
+  DBPASSWORD: ${DBPASSWORD}
+  DBHOST: ${DBHOST}
+  DBPORT: ${DBPORT}
   REDIS_HOST: ${REDIS_HOST}
   REDIS_PORT: ${REDIS_PORT}
 
@@ -30,16 +30,27 @@ services:
       postgres:
         condition: service_healthy
 
-  celery:
-    container_name: celery_container
+  celeryworker:
+    container_name: celeryworker_container
     build: .
     volumes:
       - ./:${PROJECT_PATH}
     restart: "always"
-    command: "celery -A celery worker -f ${PROJECT_PATH}/celery.log -l info --beat"
+    command: "celery -A worker worker --pool=prefork -f ${PROJECT_PATH}/celery.log -l info"
     environment: *bot
     depends_on:
       - redis
+
+  celeryscheduler:
+    container_name: celeryscheduler_container
+    build: .
+    volumes:
+      - ./:${PROJECT_PATH}
+    restart: "always"
+    command: "celery -A worker beat -f ${PROJECT_PATH}/celeryscheduler.log -l info"
+    environment: *bot
+    depends_on:
+      - celeryworker
 
   redis:
     container_name: redis_container
