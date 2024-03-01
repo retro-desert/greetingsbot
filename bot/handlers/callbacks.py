@@ -2,8 +2,8 @@ from aiogram import Dispatcher
 from aiogram.dispatcher import FSMContext
 from aiogram.types import CallbackQuery
 
-from bot.handlers.commands import start
-from bot.markup import markup_choose_event, markup_cancel, markup_donate, markup_choose_person, markup_choose_greeting
+from bot.markup import markup_choose_event, markup_cancel, markup_donate, markup_choose_person, markup_choose_greeting, \
+	markup_menu
 from bot.services import get_event, get_title, get_photo, get_default_event
 from bot.states import Form
 from loader import bot
@@ -26,7 +26,7 @@ async def choose_event_callback(call: CallbackQuery, state: FSMContext) -> None:
 			# Установка состояния
 			await Form.input_event_name.set()
 			# Отправка сообщения
-			await bot.send_message(call.message.chat.id, "(Добавление) Отправьте название праздника",
+			await bot.send_message(call.message.chat.id, "Отправьте название праздника",
 								   reply_markup=markup_cancel())
 
 
@@ -52,7 +52,7 @@ async def choose_person_callback(call: CallbackQuery, state: FSMContext) -> None
 				await bot.send_photo(call.message.chat.id, get_photo(event.photo).photo_id,
 									 caption=event.text,
 									 reply_markup=markup_donate(text=event.button_text, link=event.button_link))
-				await start(call.message.chat.id, state)
+
 			# Иначе
 			else:
 				# Формируем словарь с данными
@@ -88,11 +88,22 @@ async def choose_greeting_callback(call: CallbackQuery, state: FSMContext) -> No
 			await Form.choose_greeting.set()
 
 
+async def to_menu_callback(call: CallbackQuery, state: FSMContext) -> None:
+	# Если есть колбек
+	if call.message:
+		# Завершаем состояние
+		await state.finish()
+		# Отвечаем пользователю
+		await bot.send_message(call.message.chat.id,
+							   "Начнем !",
+							   reply_markup=markup_menu())
+
+
 def register_callbacks(disp: Dispatcher) -> list:
 	# Регистрируем обработчики
-	disp.register_callback_query_handler(choose_event_callback)
+	disp.register_callback_query_handler(choose_event_callback, lambda call: call.data in ("choose_event", "input_event"), state="*")
+	disp.register_callback_query_handler(to_menu_callback, lambda call: call.data in ("to_menu"), state="*")
 	disp.register_callback_query_handler(choose_person_callback, state=Form.choose_event)
-	disp.register_callback_query_handler(choose_greeting_callback, state=Form.choose_person)
 	disp.register_callback_query_handler(choose_greeting_callback, state=Form.choose_person)
 
 	return []

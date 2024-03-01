@@ -4,9 +4,16 @@ from bot.services import get_all_titles, get_all_person
 
 # Разметка отмены действия
 def markup_cancel() -> ReplyKeyboardMarkup:
-	# Добавление кнопки /cancel в клавиатуре
+	# Добавление кнопки Назад в клавиатуре
 	markup = ReplyKeyboardMarkup(resize_keyboard=True, selective=True)
-	markup.add("/cancel")
+	markup.add("Назад")
+	return markup
+
+
+def markup_to_menu() -> ReplyKeyboardMarkup:
+	# Добавление кнопки Назад в клавиатуре
+	markup = ReplyKeyboardMarkup(resize_keyboard=True, selective=True)
+	markup.add("В меню")
 	return markup
 
 
@@ -44,14 +51,15 @@ def markup_choose_person() -> InlineKeyboardMarkup:
 def markup_choose_greeting() -> ReplyKeyboardMarkup:
 	# Добавление одной кнопки на сообщении
 	markup = ReplyKeyboardMarkup(resize_keyboard=True, selective=True)
-	markup.add("Еще поздравление", "/cancel")
+	markup.add("Еще поздравление", "Назад")
 	return markup
 
 
 # Разметка кнопки поддержать
 def markup_donate(link: str = "https://www.google.com/", text: str = "Поддержать") -> InlineKeyboardMarkup:
 	# Добавление кнопки с ссылкой "Поддержать" на сообщении
-	markup = InlineKeyboardMarkup(resize_keyboard=True, selective=True)
+	markup = InlineKeyboardMarkup(row_width=1)
 	item1 = InlineKeyboardButton(text=text, url=link)
-	markup.add(item1)
+	item2 = InlineKeyboardButton(text="В меню", callback_data="to_menu")
+	markup.add(item1, item2)
 	return markup

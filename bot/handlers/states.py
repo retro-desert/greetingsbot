@@ -4,7 +4,7 @@ from aiogram.types import Message, ReplyKeyboardRemove
 from dateutil import parser
 
 from bot.handlers.commands import start
-from bot.markup import markup_choose_greeting, markup_donate
+from bot.markup import markup_choose_greeting, markup_donate, markup_to_menu, markup_menu
 from bot.markup import markup_cancel
 from bot.services import create_event, get_default_event, get_photo, get_event_or_none
 from bot.states import Form
@@ -20,7 +20,7 @@ async def add_event_date(message: Message, state: FSMContext) -> None:
 	await state.update_data(input_event_name=event_data)
 	# Обновление состояния
 	await Form.input_event_date.set()
-	await bot.send_message(message.from_user.id, "(Добавление) Отправьте дату праздника в формате гггг мм дд",
+	await bot.send_message(message.from_user.id, "Отправьте дату праздника в формате гггг мм дд",
 						   reply_markup=markup_cancel())
 
 
@@ -46,7 +46,7 @@ async def add_event_final(message: Message, state: FSMContext) -> None:
 
 	# Завершение состояния
 	await state.finish()
-	await bot.send_message(message.from_user.id, "[+] Праздник добавлен!\nПросмотреть - /show_events",
+	await bot.send_message(message.from_user.id, "Праздник добавлен!\nПросмотреть - /show_events",
 						   reply_markup=ReplyKeyboardRemove())
 
 
@@ -78,11 +78,10 @@ async def choose_greeting(message: Message, state: FSMContext) -> None:
 			await state.finish()
 			# Сообщение
 			text1 = """
-А ещё, вы всегда сможете отправить поздравление с праздником для семей фонда Соломон! А в знак благодарности мы с удовольствием отправим вам письмо радости от подопечного или видео привет!
+А ещё, вы всегда сможете отправить поздравление с праздником для семей фонда Соломон! А в знак благодарности мы с удовольствием отправим вам письмо радости от подопечного или видео привет!\n
 Нажмите на кнопку - чтобы поддержать семью"""
-			# await bot.send_message(message.chat.id, text2, reply_markup=ReplyKeyboardRemove())
 			await bot.send_message(message.chat.id, text1, reply_markup=markup_donate(link="https://clck.ru/394XDH/"))
-			await start(message, state)
+			# await start(message, state)
 
 
 # Обработка сообщения при состоянии del_event
@@ -100,16 +99,34 @@ async def del_event_final(message: Message, state: FSMContext) -> None:
 			# Удаляем полученное значение
 			result.delete_instance()
 			# Отвечаем пользователю
-			await message.reply("[+] Праздник удален", reply_markup=ReplyKeyboardRemove())
+			await message.reply("Праздник удален", reply_markup=ReplyKeyboardRemove())
 			# Завершение состояния
 			await state.finish()
 	# Иначе
 	else:
-		await bot.send_message(message.from_user.id, "[-] Праздник не найден, попробуйте еще раз")
+		await bot.send_message(message.from_user.id, "Праздник не найден, попробуйте еще раз")
+
+
+# Обработка всех сообщений по тексту
+async def all_messages_handler(message: Message, state: FSMContext) -> None:
+	# Завершаем все состояния
+	await state.finish()
+
+	if message.text == "Назад":
+		# Завершаем все состояния
+
+		# Отвечаем пользователю
+		await message.reply("Сброшено", reply_markup=markup_to_menu())
+	elif message.text == "В меню":
+		# Отвечаем пользователю
+		await bot.send_message(message.from_user.id,
+							   "Начнем !",
+							   reply_markup=markup_menu())
 
 
 def register_states(disp: Dispatcher) -> list:
 	# Регистрируем обработчики
+	disp.register_message_handler(all_messages_handler, lambda message: message.text in ("Назад", "В меню"), state="*")
 	disp.register_message_handler(add_event_date, state=Form.input_event_name)
 	disp.register_message_handler(add_event_final, state=Form.input_event_date)
 	disp.register_message_handler(choose_greeting, state=Form.choose_greeting)
