@@ -107,7 +107,7 @@ def register_commands(disp: Dispatcher) -> list:
 	return [
 		BotCommand(start_command_name, "Приветственное сообщение, перезапуск"),
 		BotCommand(help_command_name, "Список команд"),
-		BotCommand(show_events_command_name, "Показать все праздники"),
+		BotCommand(show_events_command_name, "Показать все свои праздники"),
 		BotCommand(add_event_name_command_name, "Добавить праздник"),
 		BotCommand(del_event_command_name, "Удалить праздник"),
 	]
