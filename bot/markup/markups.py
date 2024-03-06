@@ -1,5 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 from bot.services import get_all_titles, get_all_person
+from data.config import MEN_LIST
 
 
 # Разметка отмены действия
@@ -38,12 +39,13 @@ def markup_choose_event() -> InlineKeyboardMarkup:
 
 
 # Разметка выбора человека для поздравления
-def markup_choose_person() -> InlineKeyboardMarkup:
+def markup_choose_person(exclude_men: bool = False) -> InlineKeyboardMarkup:
 	markup = InlineKeyboardMarkup(row_width=1)
 	# Выбор всех личностей и отображение их в виде кнопок на сообщении
 	persons = get_all_person()
 	for i, person in enumerate(persons):
-		markup.add(InlineKeyboardButton(text=person["name"], callback_data=f"for_{person['id']}"))
+		if not (exclude_men and person["name"] in MEN_LIST):
+			markup.add(InlineKeyboardButton(text=person["name"], callback_data=f"for_{person['id']}"))
 	return markup
 
 

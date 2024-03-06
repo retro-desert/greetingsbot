@@ -3,7 +3,6 @@ from aiogram.dispatcher import FSMContext
 from aiogram.types import Message, ReplyKeyboardRemove
 from dateutil import parser
 
-from bot.handlers.commands import start
 from bot.markup import markup_choose_greeting, markup_donate, markup_to_menu, markup_menu
 from bot.markup import markup_cancel
 from bot.services import create_event, get_default_event, get_photo, get_event_or_none
@@ -20,7 +19,7 @@ async def add_event_date(message: Message, state: FSMContext) -> None:
 	await state.update_data(input_event_name=event_data)
 	# Обновление состояния
 	await Form.input_event_date.set()
-	await bot.send_message(message.from_user.id, "Отправьте дату праздника в формате гггг мм дд",
+	await bot.send_message(message.from_user.id, "Отправьте дату праздника в формате дд мм гггг",
 						   reply_markup=markup_cancel())
 
 
@@ -32,7 +31,7 @@ async def add_event_final(message: Message, state: FSMContext) -> None:
 
 	try:
 		# Парсим дату из сообщения
-		result_date = parser.parse(message.text)
+		result_date = parser.parse(message.text, dayfirst=True)
 	except Exception:
 		await message.reply("Неверный формат даты")
 		return None
@@ -81,7 +80,6 @@ async def choose_greeting(message: Message, state: FSMContext) -> None:
 А ещё, вы всегда сможете отправить поздравление с праздником для семей фонда Соломон! А в знак благодарности мы с удовольствием отправим вам письмо радости от подопечного или видео привет!\n
 Нажмите на кнопку - чтобы поддержать семью"""
 			await bot.send_message(message.chat.id, text1, reply_markup=markup_donate(link="https://clck.ru/394XDH/"))
-			# await start(message, state)
 
 
 # Обработка сообщения при состоянии del_event
@@ -124,8 +122,14 @@ async def all_messages_handler(message: Message, state: FSMContext) -> None:
 							   reply_markup=markup_menu())
 
 
+# Обработка полученного фото
+# async def photo_handler(message: Message) -> None:
+# 	print(message.photo)
+
+
 def register_states(disp: Dispatcher) -> list:
 	# Регистрируем обработчики
+	# disp.register_message_handler(photo_handler, state="*", content_types=["photo"])
 	disp.register_message_handler(all_messages_handler, lambda message: message.text in ("Назад", "В меню"), state="*")
 	disp.register_message_handler(add_event_date, state=Form.input_event_name)
 	disp.register_message_handler(add_event_final, state=Form.input_event_date)

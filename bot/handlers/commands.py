@@ -80,12 +80,6 @@ async def del_event_begin(message: Message, state: FSMContext) -> None:
 		await message.reply("Добавленных праздников нет")
 
 
-# Обработка полученного фото
-# @disp.message_handler(state="*", content_types=["photo"])
-# async def rwedwedphoto(message: types.Message) -> None:
-# 	print(message.photo)
-
-
 # Обработка команды /add_event
 async def add_event_name(message: Message) -> None:
 	# Установка состояния
