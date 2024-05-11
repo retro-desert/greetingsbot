@@ -19,7 +19,7 @@ async def add_event_date(message: Message, state: FSMContext) -> None:
 	await state.update_data(input_event_name=event_data)
 	# Обновление состояния
 	await Form.input_event_date.set()
-	await bot.send_message(message.from_user.id, "Отправьте дату праздника в формате дд мм гггг",
+	await bot.send_message(message.from_user.id, "Отправьте дату праздника в формате дд.мм.гггг",
 						   reply_markup=markup_cancel())
 
 
@@ -45,7 +45,7 @@ async def add_event_final(message: Message, state: FSMContext) -> None:
 
 	# Завершение состояния
 	await state.finish()
-	await bot.send_message(message.from_user.id, "Праздник добавлен!\nПросмотреть - /show_events",
+	await bot.send_message(message.from_user.id, "Праздник добавлен\nПросмотреть - /show_events",
 						   reply_markup=ReplyKeyboardRemove())
 
 
@@ -118,7 +118,7 @@ async def all_messages_handler(message: Message, state: FSMContext) -> None:
 	elif message.text == "В меню":
 		# Отвечаем пользователю
 		await bot.send_message(message.from_user.id,
-							   "Начнем !",
+							   "Начнем❤️",
 							   reply_markup=markup_menu())
 
 

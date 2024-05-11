@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from aiogram import Dispatcher
 from aiogram.dispatcher import FSMContext
 from aiogram.types import BotCommand, Message, ParseMode, ReplyKeyboardRemove
@@ -17,7 +19,7 @@ async def start(message: Message or int, state: FSMContext) -> None:
 У нас готовы поздравления, которые можно отправить вашим друзьям, коллегам или тем, кого вы любите. Выбирайте и делитесь!\n
 А если у вас есть своя особенная дата, которая заслуживает внимания, добавьте ее сюда, и за два дня мы напомним вам о ней.
 """
-	text2 = """Начнем !"""
+	text2 = """Начнем❤️"""
 	# Отвечаем пользователю
 
 	await bot.send_message(message.from_user.id if type(message) == Message else message,
@@ -52,7 +54,7 @@ async def show_events(message: Message) -> None:
 
 	# Если праздники есть
 	if events:
-		events = [f"Праздник: {event['text']}\nДата: {event['date']}" for event in events]
+		events = [f"Праздник: {event['text']}\nДата: {datetime.strftime(event['date'], '%d.%m.%Y')}" for event in events]
 		await message.reply("\n\n".join(events))
 	# Иначе
 	else:

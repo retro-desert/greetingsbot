@@ -3,7 +3,7 @@ from data.config import MEN_LIST
 from models import Event, Person, Title, Photo
 
 default_events = (
-	"День Рождения близкого человека",
+	"День Рождения",
 	"День Благотворительности",
 	"14 февраля - День всех влюбленных",
 	"8 марта – Международный женский день",
@@ -18,10 +18,12 @@ persons = (
 	"Папу",
 	"Бабушку",
 	"Дедушку",
+	"Друга",
+	"Подругу",
+	"Мужа/любимого",
+	"Жену/любимую",
 	"Брата",
 	"Сестру",
-	"Друга | мужчину",
-	"Подругу | девушку",
 	"Родственника",
 	"Коллегу",
 	"Руководителя",
@@ -120,50 +122,6 @@ greetings = {
 	],
 	"24": [
 		{
-			"text": "Братишка, с Днём Святого Валентина! Твоя поддержка и дружба – для меня как спасательный круг в океане жизни.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат, с любовью и благословением в этот особенный день! Твоя сила и решимость всегда меня вдохновляют.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогой брат, с Днём Святого Валентина! Твоя весёлая натура и доброе сердце делают каждый день особенным.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат, с Днём Святого Валентина! Твоя заразительная улыбка – мой источник радости и оптимизма.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "С тобой всегда весело, брат! С Днём Святого Валентина! Твоя жизнерадостность – мое бесценное богатство.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-	],
-	"25": [
-		{
-			"text": "Сестрёнка, с Днём Святого Валентина! Твоя забота и нежность – как лучики солнца в моей жизни.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогая сестричка, с любовью и благословением в этот особенный день! Твоя умная голова и доброе сердце – радость моих дней.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сердечно поздравляю самую лучшую сестру с Днём Святого Валентина! Твоя поддержка – мой надёжный причал.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестричка, с Днём Святого Валентина! Твоя улыбка и веселый настрой делают каждый момент весёлым и особенным.",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогая сестра, с Днём Святого Валентина! Твоя открытость и чувство юмора радуют моё сердце!",
-			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
-		},
-	],
-	"26": [
-		{
 			"text": "Мой дорогой, с Днём Святого Валентина! Твоя любовь – моё счастье! Ты вдохновляешь меня.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
@@ -184,7 +142,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
 	],
-	"27": [
+	"25": [
 		{
 			"text": "Моя дорогая, с Днём Святого Валентина! Твоя нежность и красота – мой источник восторга и вдохновения.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
@@ -206,7 +164,95 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
 	],
+	"26": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"27": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"28": [
+		{
+			"text": "Братишка, с Днём Святого Валентина! Твоя поддержка и дружба – для меня как спасательный круг в океане жизни.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат, с любовью и благословением в этот особенный день! Твоя сила и решимость всегда меня вдохновляют.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогой брат, с Днём Святого Валентина! Твоя весёлая натура и доброе сердце делают каждый день особенным.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат, с Днём Святого Валентина! Твоя заразительная улыбка – мой источник радости и оптимизма.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "С тобой всегда весело, брат! С Днём Святого Валентина! Твоя жизнерадостность – мое бесценное богатство.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"29": [
+		{
+			"text": "Сестрёнка, с Днём Святого Валентина! Твоя забота и нежность – как лучики солнца в моей жизни.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогая сестричка, с любовью и благословением в этот особенный день! Твоя умная голова и доброе сердце – радость моих дней.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сердечно поздравляю самую лучшую сестру с Днём Святого Валентина! Твоя поддержка – мой надёжный причал.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестричка, с Днём Святого Валентина! Твоя улыбка и веселый настрой делают каждый момент весёлым и особенным.",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогая сестра, с Днём Святого Валентина! Твоя открытость и чувство юмора радуют моё сердце!",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"210": [
 		{
 			"text": "С Днём Святого Валентина, родной(ая)! Твоя мудрость – мой самый надежный компас.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
@@ -228,7 +274,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
 	],
-	"29": [
+	"211": [
 		{
 			"text": "Уважаемый(ая) коллега, с Днём Святого Валентина! Твой профессионализм и отзывчивость – пример для подражания.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
@@ -250,7 +296,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
 	],
-	"210": [
+	"212": [
 		{
 			"text": "С благодарностью и уважением поздравляю вас, руководитель(ница), с Днём Святого Валентина! Ваши организаторские способности окрыляют и зовут на трудовые подвиги.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
@@ -272,7 +318,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 		},
 	],
-	"211": [
+	"213": [
 		{
 			"text": "Мой дорогой пушистик (или кличка питомца), с Днём Святого Валентина! Твои ласки и верность – моя истинная радость.",
 			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
@@ -384,50 +430,6 @@ greetings = {
 	],
 	"34": [
 		{
-			"text": "Братишка, с 8 марта! Твои шутки – заряд положительной энергии для всей семьи!",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": 'С 8 марта, брат! Ты – наш главный "зачинщик" веселья.',
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат, с Международным женским днём тебя! Твои кулинарные эксперименты – настоящее искусство!",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Поздравляю тебя, братик, с 8 марта! Твоя главная сила в добром сердце.",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат, с праздником! Твоя ослепительная улыбка – как солнечный лучик, сразу становится тепло!",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-	],
-	"35": [
-		{
-			"text": "Сестричка, с 8 марта! Твои советы – как мультитул в нашем семейном ящике с инструментами.",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогая сестра, с Международным женским днём тебя! Твои кулинарные эксперименты – наше любимое гастрономическое приключение!",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестрёнка, с 8 марта! Твоя энергия – как магнит, притягивающий позитив и радость.",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Поздравляю тебя, сестрица, с 8 марта! Твоя сила – в твоей уникальности.",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестра, с праздником! Твоя доброта – как волшебная палочка, делающая наш мир ярче.",
-			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
-		},
-	],
-	"36": [
-		{
 			"text": "Мой дорогой, с 8 марта! Твоя любовь – как тёплый ветерок, уносящий все заботы.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
@@ -448,7 +450,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
 	],
-	"37": [
+	"35": [
 		{
 			"text": "Моя любовь, с 8 марта! Твоя красота – магическое сияние, освещающее мою жизнь ярче солнца.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
@@ -470,7 +472,95 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
 	],
+	"36": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"37": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"38": [
+		{
+			"text": "Братишка, с 8 марта! Твои шутки – заряд положительной энергии для всей семьи!",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": 'С 8 марта, брат! Ты – наш главный "зачинщик" веселья.',
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат, с Международным женским днём тебя! Твои кулинарные эксперименты – настоящее искусство!",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Поздравляю тебя, братик, с 8 марта! Твоя главная сила в добром сердце.",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат, с праздником! Твоя ослепительная улыбка – как солнечный лучик, сразу становится тепло!",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+	],
+	"39": [
+		{
+			"text": "Сестричка, с 8 марта! Твои советы – как мультитул в нашем семейном ящике с инструментами.",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогая сестра, с Международным женским днём тебя! Твои кулинарные эксперименты – наше любимое гастрономическое приключение!",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестрёнка, с 8 марта! Твоя энергия – как магнит, притягивающий позитив и радость.",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Поздравляю тебя, сестрица, с 8 марта! Твоя сила – в твоей уникальности.",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестра, с праздником! Твоя доброта – как волшебная палочка, делающая наш мир ярче.",
+			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
+		},
+	],
+	"310": [
 		{
 			"text": "Дорогой родственник, с 8 марта! Твоя отзывчивость и общительность объединяют всю семью.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
@@ -492,7 +582,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
 	],
-	"39": [
+	"311": [
 		{
 			"text": "Коллега, с 8 марта! Твой профессионализм – как бриллиант в короне нашей команды.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
@@ -514,7 +604,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
 	],
-	"310": [
+	"312": [
 		{
 			"text": "Уважаемый руководитель, с 8 марта! Для нас вы маяк, указывающий путь к успеху.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
@@ -536,7 +626,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 		},
 	],
-	"311": [
+	"313": [
 		{
 			"text": "Мой милый пушистик (или кличка), с 8 марта! Твои мурчания – лучшая музыка для моих ушей.",
 			"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
@@ -648,50 +738,6 @@ greetings = {
 	],
 	"44": [
 		{
-			"text": 'Братишка, с 1 сентября! Готов ли ты к "школьным заметкам" о том, как ты занимаешь ванную вечером?',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Брат, с Днем Возвращения к "Школе Братства"! Ты – мой личный гуру по семейным приключениям.',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Братик, с праздником! Пусть этот "школьный год" принесёт нам новые рекорды по придумыванию весёлых прозвищ.',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат мой, крепись - впереди новый учебный год. Мы будем вместе в нашей борьбе за знания!",
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": "Брат, 1 сентября надвигается! Ты ведь поможешь мне с домашкой, правда?",
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-	],
-	"45": [
-		{
-			"text": 'Сестричка, с 1 сентября! Готова ли ты к "урокам женской магии" в этом семейном учебном году?',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Дорогая сестра, с Днем Возвращения к "Школе Женственности"! Твои лайфхаки – неотъемлемая часть нашего семейного арсенала.',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Сестренка, с праздником! Пусть этот "школьный год" принесет нам невероятные сюрпризы и весёлые моменты.',
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестрица, привет! У нас опять 1 сентября - давай праздновать, уроки только завтра)",
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестра, этот день настал. Школы опять открыли свои двери и ждут учеников. Мы выдержим это и будем гордиться собой.",
-			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
-		},
-	],
-	"46": [
-		{
 			"text": 'Мой любимый, с 1 сентября! Надеюсь, ты готов к "урокам семейной гармонии" с любовью и уважением!',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
@@ -712,7 +758,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
 	],
-	"47": [
+	"45": [
 		{
 			"text": 'Моя любовь, с 1 сентября! Готова ли ты к "урокам нежности" и "заданиям по расцветанию от счастья"?',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
@@ -734,7 +780,95 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
 	],
+	"46": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"47": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"48": [
+		{
+			"text": 'Братишка, с 1 сентября! Готов ли ты к "школьным заметкам" о том, как ты занимаешь ванную вечером?',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Брат, с Днем Возвращения к "Школе Братства"! Ты – мой личный гуру по семейным приключениям.',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Братик, с праздником! Пусть этот "школьный год" принесёт нам новые рекорды по придумыванию весёлых прозвищ.',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат мой, крепись - впереди новый учебный год. Мы будем вместе в нашей борьбе за знания!",
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": "Брат, 1 сентября надвигается! Ты ведь поможешь мне с домашкой, правда?",
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+	],
+	"49": [
+		{
+			"text": 'Сестричка, с 1 сентября! Готова ли ты к "урокам женской магии" в этом семейном учебном году?',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Дорогая сестра, с Днем Возвращения к "Школе Женственности"! Твои лайфхаки – неотъемлемая часть нашего семейного арсенала.',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Сестренка, с праздником! Пусть этот "школьный год" принесет нам невероятные сюрпризы и весёлые моменты.',
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестрица, привет! У нас опять 1 сентября - давай праздновать, уроки только завтра)",
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестра, этот день настал. Школы опять открыли свои двери и ждут учеников. Мы выдержим это и будем гордиться собой.",
+			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
+		},
+	],
+	"410": [
 		{
 			"text": 'Дорогой родственник, с 1 сентября! Готов ли ты к "урокам семейных тайн" и "традиций празднования"?',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
@@ -756,7 +890,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
 	],
-	"49": [
+	"411": [
 		{
 			"text": 'Коллега, с 1 сентября! Готов ли ты к "урокам корпоративной этики" и "мистическим исчезновениям из офиса"?',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
@@ -778,7 +912,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
 	],
-	"410": [
+	"412": [
 		{
 			"text": 'Уважаемый руководитель, с 1 сентября! Готов ли ты к "урокам лидерства" и "творческому вдохновению"?',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
@@ -800,7 +934,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 		},
 	],
-	"411": [
+	"413": [
 		{
 			"text": 'Мой милый пушистик (или кличка), с 1 сентября! Готов ли ты к "урокам игривости" и "мастер-классам по уюту"?',
 			"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
@@ -912,50 +1046,6 @@ greetings = {
 	],
 	"64": [
 		{
-			"text": "Братишка, с наступающим Новым Годом! Пусть этот год принесет тебе не только новые рекорды в видеоиграх, но и успехи на работе.",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Брат, с Новым Годом! Желаю новых рекордов в фитнес-клубе, на стадионе и на спортплощадке!",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": 'С праздником, бро! Надеюсь, что  этот год принесет тебе не только признание на работе, но и победу в семейных "спортивных дуэлях".',
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "С наступающим, брат! Пусть в новом году будет больше креатива и творчества.",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": 'Братишка, с Новым Годом! Пусть наши "бои" за пульт от телевизора будут такими же зрелищными, как чемпионаты по футболу!',
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-	],
-	"65": [
-		{
-			"text": "Сестричка, с наступающим Новым Годом! Желаю твоим мечтам сбываться! Будь здорова и счастлива, как никогда прежде!",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Дорогая сестра, с Новым Годом! Увлекайся и увлекай, радуйся и радуй, удивляйся и удивляй! Люблю тебя!",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Сестренка, с праздником! Пусть этот год принесёт тебе не только успехи в работе, но и безудержное веселье в кругу семьи.",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "С наступающим, сестричка! Пусть новый год станет для тебя поводом открыть новые горизонты в путешествиях и увлекательных занятиях.",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Дорогая сестра, с Новым Годом! Пусть наши семейные вечера будут такими же теплыми, как и твои объятия, и такими же весёлыми, как твои шутки!",
-			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
-		},
-	],
-	"66": [
-		{
 			"text": 'Мой любимый, с наступающим Новым Годом! Пусть этот год принесёт нам не только романтические встречи, но и множество "боев" в мире видеоигр.',
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
@@ -976,7 +1066,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
 	],
-	"67": [
+	"65": [
 		{
 			"text": "Дорогая, с Новым Годом! Желаю нашим отношениям быть такими же красочными, как фейерверки в ночном небе.",
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
@@ -998,7 +1088,96 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
 	],
+	"66": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"67": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"68": [
+		{
+			"text": "Братишка, с наступающим Новым Годом! Пусть этот год принесет тебе не только новые рекорды в видеоиграх, но и успехи на работе.",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Брат, с Новым Годом! Желаю новых рекордов в фитнес-клубе, на стадионе и на спортплощадке!",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": 'С праздником, бро! Надеюсь, что  этот год принесет тебе не только признание на работе, но и победу в семейных "спортивных дуэлях".',
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "С наступающим, брат! Пусть в новом году будет больше креатива и творчества.",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": 'Братишка, с Новым Годом! Пусть наши "бои" за пульт от телевизора будут такими же зрелищными, как чемпионаты по футболу!',
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+	],
+	"69": [
+		{
+			"text": "Сестричка, с наступающим Новым Годом! Желаю твоим мечтам сбываться! Будь здорова и счастлива, как никогда прежде!",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Дорогая сестра, с Новым Годом! Увлекайся и увлекай, радуйся и радуй, удивляйся и удивляй! Люблю тебя!",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Сестренка, с праздником! Пусть этот год принесёт тебе не только успехи в работе, но и безудержное веселье в кругу семьи.",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "С наступающим, сестричка! Пусть новый год станет для тебя поводом открыть новые горизонты в путешествиях и увлекательных занятиях.",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Дорогая сестра, с Новым Годом! Пусть наши семейные вечера будут такими же теплыми, как и твои объятия, и такими же весёлыми, как твои шутки!",
+			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
+		},
+	],
+
+	"610": [
 		{
 			"text": "Родной/родная, с Новым Годом! Пусть этот год будет таким же удивительным, как разговоры, которые мы ведём в кругу семьи.",
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
@@ -1020,7 +1199,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
 	],
-	"69": [
+	"611": [
 		{
 			"text": "Коллега, с Новым Годом! Пусть в нашем офисе будет столько же вкусного, сколько в праздничном салате!",
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
@@ -1042,7 +1221,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
 	],
-	"610": [
+	"612": [
 		{
 			"text": "Уважаемый руководитель, с Новым Годом! Пусть в этом году наши проекты будут такими же успешными, как ваша стратегия управления.",
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
@@ -1064,7 +1243,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 		},
 	],
-	"611": [
+	"613": [
 		{
 			"text": "Мой пушистик (или кличка), с Новым Годом! Пусть этот год будет полон новых игрушек, вкусняшек и прогулок.",
 			"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
@@ -1176,50 +1355,6 @@ greetings = {
 	],
 	"04": [
 		{
-			"text": "Братан, с Днём Рождения! Поздравляю тебя с тем, что ты такой же крутой, как твои попытки выучить новый трюк на скейтборде.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Дорогой брат, с праздником! Пусть этот год будет таким же интересным, как и твои истории о приключениях.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "С Днём Рождения, братишка! Поздравляю тебя с тем, что ты всегда такой же невероятно смешной, как твои шутки и розыгрыши.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": 'Братуля, с праздником! Пусть твой день будет столь же удачным, как твои попытки сделать "селфи" на каждой вечеринке.',
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Братиша, с Днем Рождения! Поздравляю тебя с тем, что ты такой же нужный, как твои советы в сложных ситуациях.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-	],
-	"05": [
-		{
-			"text": "Сестричка, с Днём Рождения! Поздравляю тебя с тем, что ты такая же красивая, как твои фотографии в соцсетях.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Дорогая сестрёнка, с праздником! Пусть этот год будет таким же волшебным, как твои идеи для оформления комнаты.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "С Днём Рождения, сестричка! Поздравляю тебя с тем, что ты всегда такая же дружелюбная, как твои сообщения с утра.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Сестрёнка, с праздником! Пусть твой день будет столь же весёлым, как твои попытки научить меня танцевать.",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-		{
-			"text": "Сестрёнка, с Днем Рождения! Люблю тебя сильно-сильно! Ты замечательная!",
-			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
-		},
-	],
-	"06": [
-		{
 			"text": "Мой герой, с Днём Рождения! Хочу поскорее оказаться в твоих объятиях! Ты сильный, добрый и красивый!",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
@@ -1240,7 +1375,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
 	],
-	"07": [
+	"05": [
 		{
 			"text": "Любовь моя, с Днём Рождения! Ты восхитительна, твоя улыбка делает меня счастливым!",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
@@ -1262,7 +1397,96 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
 	],
+	"06": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"07": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"08": [
+		{
+			"text": "Братан, с Днём Рождения! Поздравляю тебя с тем, что ты такой же крутой, как твои попытки выучить новый трюк на скейтборде.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Дорогой брат, с праздником! Пусть этот год будет таким же интересным, как и твои истории о приключениях.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "С Днём Рождения, братишка! Поздравляю тебя с тем, что ты всегда такой же невероятно смешной, как твои шутки и розыгрыши.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": 'Братуля, с праздником! Пусть твой день будет столь же удачным, как твои попытки сделать "селфи" на каждой вечеринке.',
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Братиша, с Днем Рождения! Поздравляю тебя с тем, что ты такой же нужный, как твои советы в сложных ситуациях.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+	],
+	"09": [
+		{
+			"text": "Сестричка, с Днём Рождения! Поздравляю тебя с тем, что ты такая же красивая, как твои фотографии в соцсетях.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Дорогая сестрёнка, с праздником! Пусть этот год будет таким же волшебным, как твои идеи для оформления комнаты.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "С Днём Рождения, сестричка! Поздравляю тебя с тем, что ты всегда такая же дружелюбная, как твои сообщения с утра.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Сестрёнка, с праздником! Пусть твой день будет столь же весёлым, как твои попытки научить меня танцевать.",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+		{
+			"text": "Сестрёнка, с Днем Рождения! Люблю тебя сильно-сильно! Ты замечательная!",
+			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+		},
+	],
+
+	"010": [
 		{
 			"text": "Дорогой родственник, с Днём Рождения! Поздравляю тебя с тем, что ты такой же весёлый, как наши семейные встречи.",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
@@ -1284,7 +1508,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
 	],
-	"09": [
+	"011": [
 		{
 			"text": "С Днем Рождения, коллега! Надеюсь, твои рабочие проекты будут такими же успешными, как попытки скрыться от шефа в курилке)",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
@@ -1306,7 +1530,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
 	],
-	"010": [
+	"012": [
 		{
 			"text": "Уважаемый руководитель, с Днём Рождения! Пусть в этот год наши проекты развиваются так же быстро, как ваши стратегии.",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
@@ -1328,7 +1552,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 		},
 	],
-	"011": [
+	"013": [
 		{
 			"text": "Мой пушистый друг, с Днём Рождения! Пусть в этот год ты продолжишь удивлять нас своими веселыми прыжками и шалостями.",
 			"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
@@ -1440,50 +1664,6 @@ greetings = {
 	],
 	"74": [
 		{
-			"text": 'Братик, с Днём Студента! Теперь я могу похвастаться, что у меня есть брат, который понимает, что такое "зондирование уравнений".',
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогой брат, с праздником! Ты всегда был моим лучшим ресурсом для криптографических атак на пароли Wi-Fi.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Братишка, с Днём Студента! Твои розыгрыши и эксперименты в лаборатории стали неотъемлемой частью моей студенческой жизни.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Братец, с праздником! Теперь, когда я студент, я ещё больше ценю наши "научные" дебаты за обедом.',
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогой брат, с Днем Студента! Ты мой главный союзник в борьбе с преподавателями и теми, кто захватывает стиральные машины в нашей общаге.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-	],
-	"75": [
-		{
-			"text": "Сестричка, с Днём Студента! Я так и не понял, почему ты всегда была такой умной – это гены или секретные знания, полученные в университете?",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Дорогая сестричка, с праздником! Ты всегда была моим главным подсказчиком по домашним заданиям, а теперь и по студенческим проблемам.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестрёнка, с Днём Студента! Твои секреты успешной учебы теперь сослужат мне хорошую службу в мире науки и знаний.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": "Сестричка, с праздником! Ты не только моя родная сестра, но и мой кумир в мире студенческих открытий и экспериментов.",
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-		{
-			"text": 'Дорогая сестра, с Днём Студента! Теперь, когда я в университете, я еще больше ценю наши "научные" вечера с попкорном и сериалами.',
-			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
-		},
-	],
-	"76": [
-		{
 			"text": "Любимый, с Днём Студента! Теперь, когда ты еще умнее, я в два раза сильнее тебя люблю.",
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
@@ -1504,7 +1684,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
 	],
-	"77": [
+	"75": [
 		{
 			"text": "Дорогая, с Днём Студента! Теперь, когда ты студентка, ты еще больше вдохновляешь меня своим интеллектом и решимостью.",
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
@@ -1526,7 +1706,95 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
 	],
+	"76": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
+	"77": [
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+		{
+			"text": "В процессе",
+			"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
+		},
+	],
 	"78": [
+		{
+			"text": 'Братик, с Днём Студента! Теперь я могу похвастаться, что у меня есть брат, который понимает, что такое "зондирование уравнений".',
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогой брат, с праздником! Ты всегда был моим лучшим ресурсом для криптографических атак на пароли Wi-Fi.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Братишка, с Днём Студента! Твои розыгрыши и эксперименты в лаборатории стали неотъемлемой частью моей студенческой жизни.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Братец, с праздником! Теперь, когда я студент, я ещё больше ценю наши "научные" дебаты за обедом.',
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогой брат, с Днем Студента! Ты мой главный союзник в борьбе с преподавателями и теми, кто захватывает стиральные машины в нашей общаге.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+	],
+	"79": [
+		{
+			"text": "Сестричка, с Днём Студента! Я так и не понял, почему ты всегда была такой умной – это гены или секретные знания, полученные в университете?",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Дорогая сестричка, с праздником! Ты всегда была моим главным подсказчиком по домашним заданиям, а теперь и по студенческим проблемам.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестрёнка, с Днём Студента! Твои секреты успешной учебы теперь сослужат мне хорошую службу в мире науки и знаний.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": "Сестричка, с праздником! Ты не только моя родная сестра, но и мой кумир в мире студенческих открытий и экспериментов.",
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+		{
+			"text": 'Дорогая сестра, с Днём Студента! Теперь, когда я в университете, я еще больше ценю наши "научные" вечера с попкорном и сериалами.',
+			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
+		},
+	],
+	"710": [
 		{
 			"text": 'Родственник, с Днем Студента! Теперь ты официально член клуба "Люди, которые сдали экзамены".',
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
@@ -1548,7 +1816,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
 	],
-	"79": [
+	"711": [
 		{
 			"text": "Коллега, с Днём Студента! Пусть в этот учебный год ты будешь получать отличные оценки не только на работе, но и в университете!",
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
@@ -1570,7 +1838,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
 	],
-	"710": [
+	"712": [
 		{
 			"text": "Уважаемый руководитель, с Днём Студента! Пусть ваши проекты будут так же успешными, как вы во время защиты курсовых.",
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
@@ -1592,7 +1860,7 @@ greetings = {
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 		},
 	],
-	"711": [
+	"713": [
 		{
 			"text": "Мой мурлыкающий друг, с Днём Студента! Пусть этот год принесет тебе столько же увлекательных игр, сколько студентам на лекциях.",
 			"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
