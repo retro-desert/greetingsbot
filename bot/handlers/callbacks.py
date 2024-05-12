@@ -6,7 +6,6 @@ from bot.markup import markup_choose_event, markup_cancel, markup_donate, markup
 	markup_menu
 from bot.services import get_event, get_title, get_photo, get_default_event
 from bot.states import Form
-from data.config import WOMEN_TITLE, SEPTEMBER_1ST_TITLE
 from loader import bot
 
 
@@ -56,8 +55,6 @@ async def choose_person_callback(call: CallbackQuery, state: FSMContext) -> None
 
 			# Иначе
 			else:
-				flag_men = True if title.name in WOMEN_TITLE else False
-				flag_september = True if title.name in SEPTEMBER_1ST_TITLE else False
 				# Формируем словарь с данными
 				event_data = {"name": call.data}
 				# Обновляем данные в состоянии
@@ -65,8 +62,7 @@ async def choose_person_callback(call: CallbackQuery, state: FSMContext) -> None
 				await bot.send_message(
 					call.message.chat.id, "Кого мы поздравляем?",
 					reply_markup=markup_choose_person(
-						exclude_men=flag_men,
-						exclude_september=flag_september,
+						title=title
 					))
 
 

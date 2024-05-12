@@ -1,4 +1,3 @@
-# TODO: текста и ссылки вынести в бд
 import asyncio
 import logging
 from typing import List

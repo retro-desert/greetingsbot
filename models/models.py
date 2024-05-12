@@ -1,4 +1,5 @@
-from peewee import Model, ForeignKeyField, BigIntegerField, CharField, BooleanField, DateTimeField, TextField, IntegerField
+from peewee import Model, ForeignKeyField, BigIntegerField, CharField, BooleanField, DateTimeField, TextField, \
+    IntegerField
 from loader import psql_db
 
 
@@ -21,17 +22,6 @@ class TgUser(BaseModel):
         pass
 
 
-class Person(BaseModel):
-    name = CharField(verbose_name="Имя", null=True)
-    place = IntegerField(verbose_name="Позиция в выдаче", null=True)
-
-    def __repr__(self) -> str:
-        return f"<{self.name}>"
-
-    class Meta:
-        pass
-
-
 class Title(BaseModel):
     name = CharField(verbose_name="Наименование", null=True)
     is_default = BooleanField(verbose_name="По умолчанию", default=False)
@@ -45,11 +35,23 @@ class Title(BaseModel):
         pass
 
 
+class Person(BaseModel):
+    name = CharField(verbose_name="Имя", null=True)
+    title = ForeignKeyField(Title, verbose_name="Наименование", null=True)
+    place = IntegerField(verbose_name="Позиция в выдаче", null=True)
+
+    def __repr__(self) -> str:
+        return f"<{self.name}>"
+
+    class Meta:
+        pass
+
+
 class Photo(BaseModel):
     photo_id = CharField(verbose_name="Айди фото", null=True)
 
     def __repr__(self) -> str:
-        return f"<{self.name}>"
+        return f"<{self.photo_id}>"
 
     class Meta:
         pass
