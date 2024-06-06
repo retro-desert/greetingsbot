@@ -109,89 +109,89 @@ greetings = {
 		],
 		FRIEND: [
 			{
-				"text": "Мой дорогой, с Днём Святого Валентина! Твоя любовь – моё счастье! Ты вдохновляешь меня.",
+				"text": "С Днём Святого Валентина! Пусть любовь наполнит сердце радостью!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Любимый, моё сердечко бьётся чаще, когда ты рядом! С Днём Святого Валентина, дорогой!",
+				"text": "Поздравляю тебя с Днём Святого Валентина! Желаю любить, мечтать и радоваться!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "С любовью и страстью поздравляю тебя, мой герой, с Днём Святого Валентина! Твоя ласка и забота – моя радость.",
+				"text": "С Днём Святого Валентина тебя! Счастья, любви и терпения!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Любимый мой, поздравляю тебя с Днём Святого Валентина! Быть в твоих  объятиях – любимое занятие!",
+				"text": "Спешу поздравить тебя с Днём Святого Валентина! Желаю взаимной любви и стопроцентного счастья!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Дорогой, с Днём Святого Валентина! Ты отогрел моё сердце и душу, я счастлива!",
+				"text": "На календаре День Святого Валентина! Поздравляю тебя и желаю всего самого приятного и радостного!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		GIRLFRIEND: [
 			{
-				"text": "Моя дорогая, с Днём Святого Валентина! Твоя нежность и красота – мой источник восторга и вдохновения.",
+				"text": "Поздравляю тебя с Днём Святого Валентина! Пусть сердце бьётся чаще от настоящей любви!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "С любовью и страстью поздравляю тебя, моя прекрасная, с Днём Святого Валентина! Твоя улыбка делает любой день солнечным!",
+				"text": "С Днём Святого Валентина тебя! Желаю головокружительной любви и умопомрачительного счастья!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Моя дорогая, с Днём Святого Валентина! Твоя ласка и забота – как тёплый весенний ветер.",
+				"text": "Ура! 14 февраля! Поздравляю с Днём Святого Валентина! Счастья, удачи и любви!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "С тобой каждый момент полон любви, милая. С Днём Святого Валентина! Твоя светлая голова и любящее сердце – моё вдохновение.",
+				"text": "Поздравляю тебя с Днём Святого Валентина, желаю любить, мечтать и улыбаться!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Любимая, с любовью и страстью в этот день! Ты – мой райский сад и источник радости.",
+				"text": "С Днём Святого Валентина! Пусть в душе царит умиротворение, а в сердце - любовь!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_MAN: [
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Днём Святого Валентина! Желаю взаимной любви и гармонии.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с Днём Святого Валентина! Счастья, улыбок и любви!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Прими мои поздравления с Днём Святого Валентина! Пусть любовь будет долгой и счастливой!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём Святого Валентина! Желаю радоваться, улыбаться и любить!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "День Святого Валентина пришёл! Пусть всё будет легко и приятно!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Днём Святого Валентина! Желаю побольше солнечных дней и счастливых моментов.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с Днём Святого Валентина! Счастья, любви и радости тебе и твоим близким!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём Святого Валентина тебя! Пусть в жизни случается только хорошее!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Прими мои поздравления с Днём Святого Валентина! Любовь превыше всего - пусть мечты сбываются!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Днём Святого Валентина! Весна уже близко - любви и терпения.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
@@ -375,45 +375,45 @@ greetings = {
 		],
 		GIRLFRIEND: [
 			{
-				"text": "Моя любовь, с 8 марта! Твоя красота – магическое сияние, освещающее мою жизнь ярче солнца.",
+				"text": "Ура! 8 марта! Пусть вместе с тюльпанами в дом придёт весна и радость!",
 				"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "С праздником, моя прекрасная! Твои лучезарные улыбки – радость моих глаз!",
+				"text": "Поздравляю тебя с 8 марта! Желаю удачи, любви и хорошей погоды!",
 				"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Дорогая, с восьмым марта! Твоя нежность делает меня счастливым!",
+				"text": "С Международным женским днём тебя! Солнца, цветов и улыбок тебе и твоим близким!",
 				"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "С Международным женским днём тебя, моя ненаглядная! Твоя поддержка вдохновляет на новые свершения!",
+				"text": "С 8 марта тебя! Пусть сбудутся мечты и исполнятся все заветные желания!",
 				"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Милая, с праздником! Ты –  бриллиант моего сердца и услада моих глаз!",
+				"text": "А вот и мои поздравления с 8 марта подъехали! Желаю тебе всех благ, успехов на работе и крепкого здоровья!",
 				"photo_id": "AgACAgIAAxkBAAIMRGXorko639OF49EoriAzqV2LWr8kAAI71jEbZiVIS1Oc0LKtG92kAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "С 8 марта тебя! Желаю побольше цветов, радости и счастливых моментов!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с праздником! Пусть эта весна сделает сказку былью!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С 8 марта! Пусть солнечные лучи поскорее отогреют твоё сердечко!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Международным женским днём тебя! Желаю жить играючи и получать удовольствие от каждого дня!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С праздником! Весна идёт - весне дорогу! Всего наилучшего тебе!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
@@ -663,89 +663,89 @@ greetings = {
 		],
 		FRIEND: [
 			{
-				"text": 'Мой любимый, с 1 сентября! Надеюсь, ты готов к "урокам семейной гармонии" с любовью и уважением!',
+				"text": 'Поздравляю тебя с началом учебного года! Удачи, успехов и терпения!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": 'С Днём знаний, мой герой! Пусть этот "школьный год" будет наполнен яркими моментами и нежными объятиями.',
+				"text": 'С 1 сентября тебя! Пусть грандиозные планы воплотятся в жизнь!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": 'Любимый, с Днем Возвращения к "Школе Любви"! Ты – моё любимое учебное пособие, буду изучать тебя досконально)',
+				"text": 'Поздравляю тебя с Днём знаний! Желаю богатырского здоровья и безмятежного счастья!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": "Дорогой, с 1 сентября тебя! Я буду самой прилежной ученицей!",
+				"text": "1 сентября! Прими мои поздравления! Пусть новые достижения не заставят себя ждать.",
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": "Милый мой, вот и лето прошло - 1 сентября. Давай выучим что-нибудь новенькое вместе!",
+				"text": "Поздравляю тебя с 1 сентября! Желаю тебе отличного настроения и пусть всё получится!",
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 		],
 		GIRLFRIEND: [
 			{
-				"text": 'Моя любовь, с 1 сентября! Готова ли ты к "урокам нежности" и "заданиям по расцветанию от счастья"?',
+				"text": 'С 1 сентября тебя! Желаю тебе найти что-то новое и интересное!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": 'С любовью и праздником, моя прекрасная! Пусть этот "школьный год" будет полон цветов и улыбок.',
+				"text": 'Поздравляю тебя с Днём знаний! Пусть благополучие станет твоим извечным спутником!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": 'Дорогая, с Днем Возвращения к "Урокам Романтики"! Твои поцелуи – лучшее начало учебного дня.',
+				"text": 'Поздравляю тебя с 1 сентября! Счастья, здоровья, удачи и чистого неба над головой!',
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": "Поздравляю с Днём знаний, умничка! Цветы будут не только 1 сентября - обещаю!",
+				"text": "Поздравляю тебя с началом учебного года! Желаю тебе всего самого наилучшего, самого интересного и полезного!",
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 			{
-				"text": "Знание - сила, дорогуша! С 1 сентября тебя - будем учить друг друга уму-разуму)",
+				"text": "Спешу поздравить тебя с 1 сентября! Пусть всё будет так, как ты захочешь!",
 				"photo_id": "AgACAgIAAxkBAAIMRWXormwWGQzb6CeAnZH9ZmE61ObRAAJY1jEbZiVIS5SXUgk9Cho5AQADAgADdwADNAQ"
 			},
 		],
 		LOVER_MAN: [
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с 1 сентября! Учиться никогда не поздно - успехов!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём знаний! Пусть любознательность не даёт скучать!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Днём знаний! Желаю учиться только на чужих ошибках!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С 1 сентября тебя! Пусть эта осень будет тёплой и солнечной!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Вот и лето прошло - 1 сентября. Поздравляю тебя с началом учебного года и желаю научиться чему-нибудь новенькому!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "С 1 сентября тебя! Пусть золотая осень станет вторым летом!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с началом учебного года! Желаю побольше удачи, тепла и улыбок!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с 1 сентября! Пусть в доме царит гармония и любовь!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с Днём знаний! Желаю радоваться жизни и узнавать новое!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Знание - сила! Да пребудет с тобой сила! С 1 сентября тебя!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
@@ -885,89 +885,89 @@ greetings = {
 		],
 		FRIEND: [
 			{
-				"text": 'Мой любимый, с наступающим Новым Годом! Пусть этот год принесёт нам не только романтические встречи, но и множество "боев" в мире видеоигр.',
+				"text": 'С Новым годом! Пусть всё будет хорошо и предсказуемо. Удачи во всех начинаниях!',
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С любовью и праздником, мой герой! Пусть новый год будет для нас таким же захватывающим, как и твои спасательные операции в нашей домашней обители.",
+				"text": "Поздравляю тебя с Новым годом! Желаю сохранить оптимизм и стать лучшей версией себя!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимый, с Новым Годом! Давай будем делать друг друга лучше и развиваться вместе.",
+				"text": "И снова с Новым годом! Любви, дружбы, хорошей погоды и добрых вестей!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С наступающим, милый! Пусть новый год принесёт тебе не только успехи в работе, но и больше времени для наших совместных приключений.",
+				"text": "С Новым годом! С новым счастьем! Пусть небо будет безоблачным, а встречи - желанными!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Мой дорогой, с Новым Годом! Пусть каждый день в нашей жизни будет таким же запоминающимся, как твои невероятные сюрпризы! Ты потрясающий!",
+				"text": "Поздравляю с Новым годом! Желаю добра и здоровья! Пусть хлопоты будут только приятными.",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 		],
 		GIRLFRIEND: [
 			{
-				"text": "Дорогая, с Новым Годом! Желаю нашим отношениям быть такими же красочными, как фейерверки в ночном небе.",
+				"text": "С Новым годом! Удачи в делах, успехов в работе и побольше солнечных дней в наступающем году!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С Новым Годом, моя любовь! Пусть в новом  году не будет места для скуки - давай веселиться и смеяться! Жизнь проще, чем кажется.",
+				"text": "Поздравляю тебя с Новым годом! Желаю любви, тепла и исполнения всех желаний!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С праздником, моя прекрасная! Пусть наши отношения в новом году будут такими же яркими, как нарядная ёлка.",
+				"text": "С наступающим! Пусть Новый год принесёт только приятные эмоции!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимая, с Новым Годом! Хочу, чтобы каждый день был полон радости, улыбок и невероятных сюрпризов!",
+				"text": "С Новым годом! Впереди только радость! Всего наилучшего тебе!",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Моя драгоценная, с Новым Годом! Пусть наша любовь будет крепкой, как самогон твоего папы)",
+				"text": "Поздравляю с Новым годом! Желаю здоровья и благополучия! Счастье не за горами.",
 				"photo_id": "AgACAgIAAxkBAAIMRmXorpWzC7oSPY7sc_Gxvl1zzIYFAAJa1jEbZiVIS0S2zAABCgnEZAEAAwIAA3cAAzQE"
 			},
 		],
 		LOVER_MAN: [
 			{
-				"text": "В процессе",
+				"text": "С наступающим Новым Годом! Желаю тебе найти новые поводы для радости!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С праздником! Пусть новый год превзойдёт все самые смелые ожидания.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Новым Годом! С новым счастьем! Успехов в делах, удачи во всём и крепчайшего здоровья тебе!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С наступающим! Пусть новый год принесёт мешок долгожданных подарков!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Новым Годом! Пусть твои самые амбициозные планы воплотятся в жизнь!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "С Новым Годом! Желаю бороться и искать, найти и не сдаваться!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Новым Годом тебя! Пусть в новом году не будет места для скуки. Успехов, улыбок и удачи!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С праздником! Да будет так: мечты исполнятся, трудности закончатся и всем станет хорошо!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с Новым Годом! Пусть каждый день будет полон радости, улыбок и приятных сюрпризов!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Новым Годом тебя! Уверен, что всё наладится - впереди ещё много интересного!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
@@ -1195,89 +1195,89 @@ greetings = {
 		],
 		FRIEND: [
 			{
-				"text": "Мой герой, с Днём Рождения! Хочу поскорее оказаться в твоих объятиях! Ты сильный, добрый и красивый!",
+				"text": "С днём рождения тебя! Ты пример для подражания - удачи в делах!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимый, с праздником! Пусть этот год будет таким же захватывающим, как твои планы на будущее.",
+				"text": "Поздравляю с днём рождения! Пусть праздник будет весёлым, угощение - вкусным, а подарок - желанным!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С Днём Рождения, мой красавчик! Поздравляю тебя с тем, что ты всегда такой внимательный и заботливый!",
+				"text": "Поздравляю тебя с днём рождения! Желаю крепкого здоровья, верных друзей и славных дел!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Мой дорогой, с праздником! Пусть твой день будет столь же стильным, как твои образы на наших совместных фотографиях.",
+				"text": "С днём рождения! Пир на весь мир или скромное застолье - непростой выбор. Удачи!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимый мужчина, с Днём Рождения! Поздравляю тебя с тем, что ты такой же романтичный, как в день нашего знакомства.",
+				"text": "А вот и день рождения подкрался… Поздравляю! Желаю тебе всего самого лучшего!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 		],
 		GIRLFRIEND: [
 			{
-				"text": "Любовь моя, с Днём Рождения! Ты восхитительна, твоя улыбка делает меня счастливым!",
+				"text": "С днём рождения тебя! Если меняться, то только к лучшему!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимая, с праздником! Пусть этот год будет таким же чудесным, как твои глаза, когда ты видишь подарок.",
+				"text": "Поздравляю тебя с днём рождения! Желаю быть счастливой и не беспокоиться по пустякам.",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "С Днём Рождения, моя прекрасная! Поздравляю тебя с тем, что ты всегда такая же позитивная, как твои мотивационные речи.",
+				"text": "С днём рождения! Пусть что-то чудесное произойдёт как можно быстрее!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Моя дорогая, с праздником! Пусть этот день будет столь же приятным, как наши вечера вдвоём.",
+				"text": "О! День рождения! Поздравляю-поздравляю! Верь в себя и всё получится!",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 			{
-				"text": "Любимая девочка, с Днём Рождения! Ты моё счастье, моя радость, мой стимул - эти чувства окрыляют!",
+				"text": "Пора поздравить тебя с днём рождения! Желаю быть счастливой! Быть, а не казаться.",
 				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
 			},
 		],
 		LOVER_MAN: [
 			{
-				"text": "В процессе",
+				"text": "С Днём Рождения! Пусть твои мечты сбываются! Здорово, что ты есть.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с днём рождения! Желаю здоровья, счастья и побольше весёлых деньков!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём рождения тебя! Удачи, любви и терпения!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с днём рождения! Пусть всё будет хорошо или отлично!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю с Днём Рождения! Ты сможешь реализовать все свои планы на 100%!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "С Днём Рождения! Всё самое интересное впереди - это точно!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Поздравляю тебя с днём рождения! Самое время радоваться жизни!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём Рождения! Тот самый момент настал - пора творить историю!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С праздником! С днём рождения! Желаю любить, улыбаться и быть на седьмом небе от счастья!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "С Днём Рождения! Пусть этот праздник запомнится и принесёт только позитив!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
@@ -1505,89 +1505,89 @@ greetings = {
 		],
 		FRIEND: [
 			{
-				"text": "Любимый, с Днём Студента! Теперь, когда ты еще умнее, я в два раза сильнее тебя люблю.",
+				"text": "Поздравляю тебя с Днём Студента! Пусть будет легко, но интересно.",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Дорогой, с праздником! Ты – мой студент-герой, пора отметить твой успех чем-то особенным.",
+				"text": "С Днём Студента! Учиться, чтобы уметь - успехов тебе!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Мой ученый, с Днём Студента! Твоя умственная гибкость и творческий подход к учебе заставляют мое сердце биться быстрее.",
+				"text": "Поздравляю с Днём Студента! Желаю терпения и сил - всё будет!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Любимый, с праздником! Теперь ты еще ближе к своей цели, и я горжусь быть твоим научным вдохновением и поддержкой.",
+				"text": "Спешу поздравить тебя с долгожданным Днём Студента! Пусть будет весело, разнообразно и эпично!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Мой умница, с Днём Студента! Пусть этот год принесет тебе не только знания, но и море веселья и смеха.",
+				"text": "С Днём вечного студента! Учись, студент! Но и развлекаться не забывай.",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 		],
 		GIRLFRIEND: [
 			{
-				"text": "Дорогая, с Днём Студента! Теперь, когда ты студентка, ты еще больше вдохновляешь меня своим интеллектом и решимостью.",
+				"text": "Поздравляю с Днём Студента! Удачи на сессии - ты справишься!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Любимая, с праздником! Набирайся знаний и умений - у тебя всё получится.",
+				"text": "С Днём Студента! Желаю найти своё призвание и стать экспертом в любимом деле.",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Моя учёная, с Днём Студента! Твои достижения в учёбе – это еще одна причина восхищаться тобой каждый день.",
+				"text": "Поздравляю тебя с Днём Студента! Твои старания будут вознаграждены - дерзай!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Дорогая, с праздником! Ты – источник вдохновения. Ты справишься с любым гранитом науки!",
+				"text": "С Днём Студента тебя! Вызов брошен, гранит науки ждёт тебя - пора начинать!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 			{
-				"text": "Моя гениальная половинка, с Днём Студента! Горжусь тобой - ты умница!",
+				"text": "Пора поздравить тебя с Днём Студента! Упорства тебе не занимать - следуй за мечтой!",
 				"photo_id": "AgACAgIAAxkBAAIMSGXortZ0Kq3R1kDoGGtBWIjz5aplAAJc1jEbZiVIS8rbYOlTMg4kAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_MAN: [
 			{
-				"text": "В процессе",
+				"text": "Любимый, с Днём Студента! Теперь, когда ты еще умнее, я в два раза сильнее тебя люблю.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Дорогой, с праздником! Ты – мой студент-герой, пора отметить твой успех чем-то особенным.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Мой ученый, с Днём Студента! Твоя умственная гибкость и творческий подход к учебе заставляют мое сердце биться быстрее.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Любимый, с праздником! Теперь ты еще ближе к своей цели, и я горжусь быть твоим научным вдохновением и поддержкой.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Мой умница, с Днём Студента! Пусть этот год принесет тебе не только знания, но и море веселья и смеха.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
 		LOVER_WOMAN: [
 			{
-				"text": "В процессе",
+				"text": "Дорогая, с Днём Студента! Теперь, когда ты студентка, ты еще больше вдохновляешь меня своим интеллектом и решимостью.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Любимая, с праздником! Набирайся знаний и умений - у тебя всё получится.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Моя учёная, с Днём Студента! Твои достижения в учёбе – это еще одна причина восхищаться тобой каждый день.",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Дорогая, с праздником! Ты – источник вдохновения. Ты справишься с любым гранитом науки!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 			{
-				"text": "В процессе",
+				"text": "Моя гениальная половинка, с Днём Студента! Горжусь тобой - ты умница!",
 				"photo_id": "AgACAgIAAxkBAAIMQ2XorgpqORPEkQjZd_UzAcR95TG7AAI_1zEbndBJS676C6JGtp8nAQADAgADdwADNAQ"
 			},
 		],
