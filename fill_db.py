@@ -1728,57 +1728,57 @@ greetings = {
 		MOTHER: [
 			{
 				"text": "Мамочка, поздравляю с пополнением в семье! Новая маленькая жизнь - это счастье! Люблю тебя!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Мама, ура - у нас пополнение! Семья стала больше - мы радуемся как дети!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Мамуля, поздравляю тебя с рождением малыша! Пусть все будут здоровы и любимы!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 		],
 		FATHER: [
 			{
 				"text": "Папа, поздравляю тебя с пополнением в семействе! Будем радоваться, пировать и веселиться!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Папочка, с пополнением! На свет появилось маленькое чудо - мы ликуем, улыбаемся и машем!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Пап, а у нас пополнение! Спасибо, что всегда нас поддерживал - ты лучший!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 		],
 		GRANDMOTHER: [
 			{
 				"text": "Бабушка, поздравляю тебя с пополнением в семье! Появился новый повод печь пироги и торты!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Бабуля, у нас суперновость - в семействе пополнение! Кажется, кто-то скоро опять будет нянчиться.",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Любимая бабушка! У нас пополнение! Ты была права - это непередаваемые эмоции!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 		],
 		GRANDFATHER: [
 			{
 				"text": "Дедушка, поздравляю тебя с пополнением в семействе! Скоро маленький человек тихонько скажет тебе: «Деда, я тебя люблю!»",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Дедуля, пляши - у нас пополнение! Самое интересное - впереди. Здорово, что можно разделить эту радость с тобой!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 			{
 				"text": "Любимый дедушка, поздравляем тебя с пополнением в семье! Будем гулять вместе - на детских площадках нас ждут великие дела!",
-				"photo_id": "AgACAgIAAxkBAAIMR2XorragXM21EBuPAAEnKKNGjTJdTgACW9YxG2YlSEsJZxR8wwmdGQEAAwIAA3cAAzQE"
+				"photo_id": "AgACAgIAAxkBAAIUpWZplDK0Lx7dMdUaYj5ey5JKSJrMAAJR2zEbTUtQSyXoqTav5upWAQADAgADdwADNQQ"
 			},
 		],
 	}
