@@ -1793,7 +1793,7 @@ greetings_special = {
 Фонд Соломон вас очень любит!""",
 			"photo_id": "AgACAgIAAxkBAAIMSWXorxK02qdcCSY9lOmBifCv3wiWAAJg1jEbZiVIS8vMJ4k0c1NDAQADAgADdwADNAQ",
 			"button_text": "Поддержать",
-			"button_link": "https://clck.ru/394XDH"
+			"button_link": "https://solomon.charity/journal/030624"
 	},
 	DECEMBER_3: {
 			"text": """
@@ -1801,7 +1801,7 @@ greetings_special = {
 Фонд Соломон вас очень любит!""",
 			"photo_id": "AgACAgIAAxkBAAIMSmXoryoz9eVGlhJxJZsuQYEsuYzwAAJi1jEbZiVIS2UvYpN6H763AQADAgADdwADNAQ",
 			"button_text": "Поддержать",
-			"button_link": "https://clck.ru/394XDH/"
+			"button_link": "https://solomon.charity/journal/030624"
 	}
 }
 
